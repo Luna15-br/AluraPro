@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:root {
+    --corBrancoPrincipal: #ffffff;
+    --corCinzaPrincipal: #C0C0C0;
+    --corBotaoAzul: #167BF7;
+    --corBackground: #00030C;
+    --fontePrincipal: "Inter", serif;
+}
+
+body {
+
+    padding: 0 0 0 5%;
+    background-color: var(--corBackground);
+    color: var(--corBrancoPrincipal);
+    font-family: var(--fontePrincipal);
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%; 
+    line-height: 1.5; 
+}
+
+.section1 {
+    background-image: url("../asheet/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
+.containerCaixa {
+    padding: 5% 20%;
+    text-align: center;
+}
+
+.containerTitulo {
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 1em;
+}
+
+.containerBotao {
+    background: var(--corBotaoAzul);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: var(--corBrancoPrincipal);
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.containerBotao:hover {
+    background: #0056b3; 
+    transition: 0.3s;
+}
+
+.containerBotaoSec {
+    border: 0.1rem solid var(--corBrancoPrincipal);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    color: var(--corBrancoPrincipal);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.containerBotaoSec:hover {
+    background: var(--corBrancoPrincipal); 
+    color: var(--corBotaoAzul);
+    transition: 0.3s;
+}
+
+.containerParagrafoBotao {
+    font-size: 0.75rem;
+    color: var(--corCinzaPrincipal);
+    font-weight: 400;
+}
+
+.section2 {
+    
+    align-items: center;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 25%;
+    &
+    .containerBotao {
+        text-align: center;
+        padding: 0.5rem;
+        width: 45%;
+        margin-bottom: 5%;
+
+
+    }
+
+}
+
+.containerDescricao {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.imgMonitor {
+    width: 100%;
+    padding: 5% 20%;
+}
+
+.containerDescricaoTitulo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.containerDescricaoParagrafo {
+    font-size: 1rem;
+    color: var(--corCinzaPrincipal);
+}
+
+.containerConteudo {
+    
+    display: flex;
+    flex-direction: column;
+    padding: 0 20% 0 20%;
+    gap: 0.5rem;
+}
+
+.containerConteudoParagrafo {
+
+    
+    font-size: 1rem;
+    color: var(--corCinzaPrincipal);
+}
+
+.imgTelas {
+    width: 110%;
+}
+
+.containerConteudoBotao {
+    background-color: var(--corBotaoAzul);
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    text-align: center;
+    color: var(--corBrancoPrincipal);
+    text-decoration: none;
+    width: 40%;
+    margin-top: 2%;
+    font-size: 1rem;
+    
+}
+
+.containerConteudoBotao:hover {
+    background: #0056b3; 
+    transition: 0.3s;
+}
+
+.imgTelas {
+    width: auto;
+    
+}
+
+.section4 {
+    display: grid;
+    grid-template-columns: 50% 25%;
+    height: 100vh;
+    align-items: center;
+
+}
+
+.containerNotebook {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.imgNotebook {
+
+    margin-left: 15%;
+
+}
+
+.dispositivos {
+
+   
+    text-align: center;
+}
+
+.dispositivosTitulo {
+
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+.dispositivosLista {
+
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+
+}
+.rodape {
+    
+    padding-top: 10%;
+    text-align: center;
+   
+}
+
+.imgRodape {
+    margin-bottom: 1%;
+    width: auto;
+}
+
+.listaRodape {
+
+    margin-bottom: 1%;
+    list-style-type: none;
+    display: flex;
+    font-size: 0.75rem;
+    color: var(--corCinzaPrincipal);
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem
+    
+
+}
+
+.links {
+
+    text-decoration: none;
+    color: var(--corCinzaPrincipal);
+
+
+}
+.paragrafosRodape {
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20% 0 20%;
+    font-size: 0.75rem;
+    color: var(--corCinzaPrincipal);
+    text-align: center;
+}
+.minhaInfo {
+    
+    margin: 2% 1% 1% 0;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    flex-direction: row;
+
+
+}
+.meuLink {
+    
+    padding-left: 0.5rem;
+    color: var(--corBrancoPrincipal);
+    font-family: var(--fontePrincipal);
+    font-weight: 400;
+
+}
+
+
+
+
+
+
+
+@media (max-width: 720px) {
+    
+    * {
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+
+    }
+
+
+    .section1 {
+        display: flex;
+        align-items: center;
+        
+
+    }
+    .containerCaixa {
+        
+        padding: 5%;
+        margin-top: 10%;
+
+
+    }
+
+    .containerTitulo {
+        font-size: 1.5rem;
+
+    }
+
+
+    
+    .containerImg {
+
+        width: 90%;
+    }
+
+    .section2 {
+
+        display: flex;
+        flex-direction: column;
+        
+        &
+        .containerBotao {
+            text-align: center;
+            font-size: 0.75rem;
+    
+    
+        }
+    }
+
+    .containerDescricao {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .containerDescricaoTitulo {
+        font-size: 2rem;
+    }
+
+    .containerConteudo {
+        
+        flex-direction: column;
+        padding: 0;
+    }
+
+   
+
+    .imgTelas {
+
+        width: 95%;
+        margin-right: 5%;
+    }
+
+    
+    .imgMonitor {
+
+        padding: 0;
+        width: 100%;
+    }
+
+    .containerDescricao {
+
+        align-items: center;
+
+    }
+    .containerDescricaoTitulo {
+
+        font-size: 1.5rem;
+
+    }
+
+    .section4 {
+
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .imgNotebook {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .containerNotebook {
+
+        margin-top: 5%;
+    }
+
+    .dispositivos {
+
+        margin-top: 5%;
+        text-align: center;
+    }
+    
+    .dispositivosTitulo {
+        
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 5%;
+    }
+    
+    .dispositivosLista {
+    
+        display: flex;
+        font-size: 1rem;
+        justify-content: center;
+        flex-direction: column;
+        list-style-type: none;
+        margin-bottom: 40%;
+    
+    }
+    .rodape {
+        
+        padding-top: 0;
+        text-align: center;
+       
+    }
+    
+    .imgRodape {
+        margin-bottom: 3%;
+        width: auto;
+    }
+    
+    .listaRodape {
+    
+        margin-bottom: 3%;
+        list-style-type: none;
+        display: flex;
+        font-size: 0.75rem;
+        color: var(--corCinzaPrincipal);
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem
+    }
+    .paragrafosRodape {
+        justify-content: flex-start;
+        padding: 0;
+        font-size: 0.75rem;
+        color: var(--corCinzaPrincipal);
+        text-align: center;
+    }
+    .minhaInfo {
+        
+        margin: 3% 2% 2% 0;
+        display: flex;
+        font-size: 1rem;
+        justify-content: center;
+        flex-direction: row;
+    
+    
+    }
+    .meuLink {
+        
+        padding-left: 0.5rem;
+        color: var(--corBrancoPrincipal);
+        font-family: var(--fontePrincipal);
+        font-weight: 400;
+    
+    }
+  
+   
+
+}
+
